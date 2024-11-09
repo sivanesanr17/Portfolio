@@ -123,7 +123,7 @@ btn.addEventListener("click", function() {
 
 var btn = document.getElementById("downloadBtn");
 btn.addEventListener("click", function() {
-    window.location.href = "https://drive.google.com/uc?export=download&id=14XKclbijJNz1-lFkrzpxnFkxw_xCa1_p";
+    window.location.href = "https://drive.google.com/uc?export=download&id=182qkpPZGPY2pxnVa6SkKdwcs8aMGucXH";
 });
 
 function redirectToGitHubUIUXDesign() {
