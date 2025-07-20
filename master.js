@@ -121,16 +121,36 @@ btn.addEventListener("click", function() {
     window.location.href = "https://www.linkedin.com/in/sivanesanr17";
 });
 
-var btn = document.getElementById("downloadBtn");
-btn.addEventListener("click", function() {
-    window.location.href = "https://drive.google.com/uc?export=download&id=182qkpPZGPY2pxnVa6SkKdwcs8aMGucXH";
-});
-
 function redirectToGitHubUIUXDesign() {
   window.open("https://github.com/sivanesanr17/UI-UX-Designs", "_blank");
 }
 
-function redirectToGitHubJavaFX(){
+function redirectToGitHubAttendanceJavaFX(){
   window.open("https://github.com/sivanesanr17/JavaFX-AttendanceViewer", "_blank");
 }
+function redirectToGitHubOdcse(){
+  window.open("https://github.com/sivanesanr17/ODCSE", "_blank");
+}
+function redirectToGitHubChatBot(){
+  window.open("https://github.com/sivanesanr17/ChatBot", "_blank");
+}
+function redirectToGitHubQuiz(){
+  window.open("https://github.com/sivanesanr17/QuizApplication", "_blank");
+}
+var modal = document.getElementById("resumeModal");
+var btn = document.getElementById("downloadBtn");
+var closeBtn = document.getElementById("closeModal");
 
+btn.addEventListener("click", function () {
+    modal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
